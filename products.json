@@ -2,25 +2,25 @@
   {
     "name": "Wireless Mouse",
     "price": 499,
-    "image": "https://pikmybook.org/wp-content/uploads/2023/01/50-350x350.jpeg",
+    "image": "https://cdn.pixabay.com/photo/2025/11/26/06/44/pop-up-9977611_1280.jpg",
     "description": "High precision wireless mouse"
   },
   {
     "name": "Mechanical Keyboard",
     "price": 1999,
-    "image": "https://pikmybook.org/wp-content/uploads/2023/01/50-350x350.jpeg",
+    "image": "https://cdn.pixabay.com/photo/2025/11/26/06/44/pop-up-9977611_1280.jpg",
     "description": "RGB backlit mechanical keyboard"
   },
   {
     "name": "USB-C Cable",
     "price": 299,
-    "image": "https://pikmybook.org/wp-content/uploads/2023/01/50-350x350.jpeg",
+    "image": "https://cdn.pixabay.com/photo/2025/11/26/06/44/pop-up-9977611_1280.jpg",
     "description": "Durable fast charging cable"
   },
   {
     "name": "Bluetooth Speaker",
     "price": 1499,
-    "image": "https://pikmybook.org/wp-content/uploads/2023/01/50-350x350.jpeg",
+    "image": "https://cdn.pixabay.com/photo/2025/11/26/06/44/pop-up-9977611_1280.jpg",
     "description": "Portable speaker with deep bass"
   }
 ]
