@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<div>
+    <button onclick="login()">click to login</button>
+    <button onclick="getProfileInfo()">click profile info</button>
+</div>
+<!-- <script>
+    const baseUrl = "http://localhost:5000/";
+    async function login() {
+        const response = await fetch(baseUrl + "login");
+        const data = await response.json();
+       localStorage.setItem("token", data.token);
+    };
+    async function getProfileInfo() {
+       const response = await fetch(baseUrl + "profile", {headers: {Authorization: localStorage.getItem("token")}
+       });
+       const data = await response.json();
+       console.log("claims ", data);
+    };
+</script> -->
