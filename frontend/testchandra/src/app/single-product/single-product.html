@@ -1,0 +1,15 @@
+<div class="product-container">
+@if (productData) {
+        <div class="product-image">
+            <img [src]="productData.image" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h1 class="product-name">{{productData.name}}</h1>
+            <div class="product-price">{{'$' + productData.price}}</div>
+            <p class="product-description">
+                {{productData.description}}
+            </p>
+            <p-button (click)="addtocart(productData)" label="Add to Cart" />
+        </div>
+}
+    </div>

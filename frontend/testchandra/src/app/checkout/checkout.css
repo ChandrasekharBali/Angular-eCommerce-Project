@@ -1,0 +1,101 @@
+/* Checkout Page Styles */
+
+/* Page header */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #0f5fff;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Section headers */
+section h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #0f5fff;
+  padding-bottom: 5px;
+}
+
+/* Sections styling */
+section {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  border-color: #0f5fff;
+  box-shadow: 0 0 5px rgba(15, 95, 255, 0.3);
+  outline: none;
+}
+
+/* Total display */
+p {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: right;
+  color: #0f5fff;
+}
+
+/* Pay Now button */
+button {
+  display: block;
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #0f5fff;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0943c3;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  section, p, button {
+    width: 95%;
+  }
+
+  section h3 {
+    font-size: 1.2rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    font-size: 0.95rem;
+  }
+}
