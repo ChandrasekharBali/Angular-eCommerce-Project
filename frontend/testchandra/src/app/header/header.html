@@ -1,0 +1,21 @@
+<div class="d-flex justify-between header">
+  <img class="logo" routerLink="/" src="./images/angular_wordmark_gradient.png" />
+<nav>
+   <ul>
+  @if (!isLoggedIn()) {
+<li routerLink="signup">SignUp</li>
+<li routerLink="login">LogIn</li>
+  }
+
+  @if(isLoggedIn()) {
+   <li routerLink="products">Products</li>
+    <li routerLink="cart">
+      Cart <span class="cart-count">{{cartCount}}</span>
+    </li>
+    <li>
+      <button (click)="logout()" class="logout-btn">Logout</button>
+    </li>
+  }
+  </ul>
+</nav>
+</div>

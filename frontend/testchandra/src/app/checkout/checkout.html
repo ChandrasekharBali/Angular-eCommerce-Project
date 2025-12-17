@@ -1,0 +1,23 @@
+<h2>Checkout</h2>
+
+<!-- Billing Info -->
+<section>
+  <h3>Billing Information</h3>
+  <input type="text" placeholder="Name" [(ngModel)]="billing.name" />
+  <input type="email" placeholder="Email" [(ngModel)]="billing.email" />
+  <input type="tel" placeholder="Phone" [(ngModel)]="billing.phone" />
+</section>
+
+<!-- Shipping Info -->
+<section>
+  <h3>Shipping Information</h3>
+  <input type="text" placeholder="Address" [(ngModel)]="shipping.address" />
+  <input type="text" placeholder="City" [(ngModel)]="shipping.city" />
+  <input type="text" placeholder="State" [(ngModel)]="shipping.state" />
+  <input type="text" placeholder="Zip Code" [(ngModel)]="shipping.zip" />
+  <input type="text" placeholder="Country" [(ngModel)]="shipping.country" />
+</section>
+
+<p>Total: ₹{{ totalAmount }}</p>
+
+<button (click)="pay()">Pay Now</button>
