@@ -11,7 +11,7 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 const { env } = require('process');
 
-mongoose.connect('mongodb://localhost:27017/Add_Your_DB_Name_Here')
+mongoose.connect('mongodb://localhost:27017/chandra')
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error(err));
 
@@ -214,6 +214,16 @@ try {
    res.status(500).send("Error fetching order");
 }
 });
+
+app.get('/singleproduct/:id', async (req, res) => {
+
+try {
+  const product = await Products.findById(req.params.id);
+  res.status(200).json(product);
+} catch (error) {
+  res.json({message: 'error loading data'});
+}
+})
 
 
 app.post('/order/sendordersuccessemail', async (req, res) => {

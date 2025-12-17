@@ -8,6 +8,7 @@ Full-stack e-commerce application built using:
 - Razorpay Payment Gateway
 - JWT
 - Brevo Email Delivery
+- PrimeNG
 
 ## Features
 - User authentication
