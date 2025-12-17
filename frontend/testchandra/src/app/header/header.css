@@ -1,4 +1,3 @@
-/* Reset default styles for ul */
 nav ul {
   list-style: none;
   margin: 0;
@@ -7,9 +6,8 @@ nav ul {
   justify-content: flex-end; 
   padding: 15px 30px;
   border-radius: 0 0 12px 12px; 
+      align-items: center;
 }
-
-/* Navbar items */
 nav ul li {
   margin-left: 25px;
   color: #fff;
@@ -17,14 +15,10 @@ nav ul li {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
-/* Hover effect */
 nav ul li:hover {
-  color: #f9b900; /* Accent color */
+  color: #f9b900;
   transform: scale(1.1);
 }
-
-/* Optional: add underline effect on hover */
 nav ul li::after {
   content: '';
   display: block;
@@ -38,8 +32,6 @@ nav ul li::after {
 nav ul li:hover::after {
   width: 100%;
 }
-
-/* Responsive - Stack menu on small screens */
 @media screen and (max-width: 600px) {
   nav ul {
     flex-direction: column;
@@ -50,17 +42,14 @@ nav ul li:hover::after {
     margin: 10px 0;
   }
 }
-
 nav ul li {
-  position: relative; /* needed for badge */
-  margin-left: 25px;
+  position: relative;
+  margin-left: 50px;
   color: #fff;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
-/* Badge for cart count */
 .cart-count {
   position: absolute;
   top: -8px;
@@ -83,7 +72,6 @@ nav ul li {
   font-size: 0.9rem;
   transition: 0.3s;
 }
-
 .logout-btn:hover {
   background-color: #c21f00;
 }
@@ -91,7 +79,13 @@ nav ul li {
   max-width: 200px;
 }
 .header {
- background-color: #0f5fff; 
- display: flex;
+ background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+.container {
+   display: flex;
  justify-content: space-between;
+  max-width: 1200px;
+}
+.m-auto {
+  margin: auto;
 }

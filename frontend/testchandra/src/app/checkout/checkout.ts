@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { CartCountService } from '../services/cart-count-service';
 
 @Component({
   selector: 'app-checkout',
@@ -14,6 +15,7 @@ export class Checkout {
   totalAmount = 0;
   private http = inject(HttpClient);
   private router = inject(Router);
+  private cartcountservice = inject(CartCountService);
 
   billing = {
     name: '',
@@ -88,6 +90,7 @@ verifyPayment(response: any) {
       if (res.success) {
         alert('Payment Successful!');
         localStorage.removeItem('cart'); // clear cart
+        this.cartcountservice.updateCartCountFromStorage();
         this.router.navigate([`/order-success/${res.orderId}`]);
       } else {
         alert('Payment Failed Verification!');
